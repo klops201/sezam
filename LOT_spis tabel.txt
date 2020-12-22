@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\author{Bartosz Ostrokołowicz}
+
+\hypersetup{colorlinks=true,linkcolor=blue}
+\parindent=0pt
+
+\begin{document}
+{\Large spis tabel (LOT)}\vspace{32pt}
+\listoftables
+\renewcommand{\listtablename}{wykaz tabel}
+\newpage
+%----------------------------------------------------------------------------
+\lipsum[1]
+\begin{table}[h]
+\caption{Kolory}
+\begin{tabular}{|l|l|l|}
+\hline
+RGB&ang&pol \\ \hline
+FF0000&red&czerwony\\ \hline
+00FF00&green&zielony\\ \hline
+\end{tabular}
+\end{table}
+\newpage
+%----------------------------------------------------------------------------
+\lipsum[2]
+\begin{table}[h]
+\caption{Partie polityczne}
+\begin{tabular}{|l|l|l|}
+\hline
+PIS&J.KACZYNSKI \\ \hline
+PO&B.BUDKA\\ \hline
+SLD&W.CZARZASTY\\ \hline
+PSL&W.KOSINIAK \\ \hline
+\end{tabular}
+\end{table}
+\end{document}
+
+
